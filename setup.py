@@ -3,21 +3,21 @@ from pathlib import Path
 from setuptools import setup
 
 repo = Path(__file__).resolve().parent
-version_path = repo / 'lib/openwisp/sphinx/theme/VERSION'
+version_path = repo / 'lib/immunity/sphinx/theme/VERSION'
 readme_path = repo / 'README.rst'
 
 with version_path.open(encoding='utf-8') as version_file:
     __version__ = version_file.readline().strip()
 
 setup(
-    name='openwisp-sphinx-theme',
+    name='immunity-sphinx-theme',
     version=__version__,
     license='GPL3',
     author='Aryaman',
-    author_email='support@openwisp.io',
-    description='OpenWISP documentation sphinx theme',
+    author_email='support@immunity.io',
+    description='Immunity documentation sphinx theme',
     long_description=readme_path.read_text(encoding='utf-8'),
-    packages=['openwisp.sphinx.theme'],
+    packages=['immunity.sphinx.theme'],
     package_dir={'': 'lib'},
     # Includes files listed in MANIFEST.in as package data files, see
     # <https://packaging.python.org/guides/using-manifest-in/>.
@@ -25,7 +25,7 @@ setup(
     # See <http://www.sphinx-doc.org/en/stable/theming.html#distribute-your-theme-as-a-python-package>
     entry_points={
         'sphinx.html_themes': [
-            'openwisp-sphinx-theme = openwisp.sphinx.theme',
+            'immunity-sphinx-theme = immunity.sphinx.theme',
         ]
     },
     install_requires=[

@@ -2,25 +2,25 @@ import os
 import sys
 
 sys.path.append(os.path.abspath("./demo/"))
-from openwisp.sphinx.theme import __version__ as theme_version
+from immunity.sphinx.theme import __version__ as theme_version
 
-project = 'OpenWISP Demo Documentation'
+project = 'Immunity Demo Documentation'
 version = theme_version
-author = 'OpenWISP'
+author = 'Immunity'
 extensions = [
     'sphinx.ext.autodoc',
-    'openwisp.sphinx.theme',
+    'immunity.sphinx.theme',
 ]
 
-# OpenWISP demo docs site configuration
+# Immunity demo docs site configuration
 from datetime import date
 
-project = 'OpenWISP'
-copyright = f'2017-{date.today().year}, OpenWISP'
-author = 'OpenWISP Community'
+project = 'Immunity'
+copyright = f'2017-{date.today().year}, Immunity'
+author = 'Immunity Community'
 exclude_patterns = []
 templates_path = ['templates']
-html_theme = 'openwisp-sphinx-theme'
-html_logo = 'demo/assets/design/openwisp-logo-black.svg'
+html_theme = 'immunity-sphinx-theme'
+html_logo = 'demo/assets/design/immunity-logo-black.svg'
 html_favicon = 'demo/assets/design/favicon.png'
 html_favicon = 'demo/assets/design/favicon.png'

@@ -8,7 +8,7 @@ with version_path.open(encoding='utf-8') as version_file:
 
 
 def setup(app):
-    app.add_html_theme('openwisp-sphinx-theme', str(package_dir))
+    app.add_html_theme('immunity-sphinx-theme', str(package_dir))
     app.setup_extension('sphinx_copybutton')
     # disable 'created by sphinx' html footer
     app.config['html_show_sphinx'] = False

@@ -15,7 +15,7 @@
     demo/lists_tables
     demo/api
     demo/nested/index
-    External link <https://openwisp.org>
+    External link <https://immunity.org>
 
 .. toctree::
     :hidden:
