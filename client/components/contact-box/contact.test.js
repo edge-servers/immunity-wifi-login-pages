@@ -14,21 +14,21 @@ const links = [
   {
     alt: {en: "twitter"},
     icon: "twiter.svg",
-    url: "https://twitter.com/openwisp",
+    url: "https://twitter.com/immunity",
     authenticated: true,
     css: "twitter",
   },
   {
     alt: {en: "facebook"},
     icon: "facebook.svg",
-    url: "https://facebook.com/openwisp",
+    url: "https://facebook.com/immunity",
     authenticated: false,
     css: "facebook",
   },
   {
     alt: {en: "google"},
     icon: "google.svg",
-    url: "https://google.com/openwisp",
+    url: "https://google.com/immunity",
     css: "google",
   },
 ];

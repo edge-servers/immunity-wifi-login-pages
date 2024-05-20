@@ -881,7 +881,7 @@ describe("<Status /> interactions", () => {
   it("should initiate bank_card verification", async () => {
     validateToken.mockReturnValue(true);
     // mock window.location.assign
-    const location = new URL("https://wifi.openwisp.io");
+    const location = new URL("https://wifi.immunity.io");
     location.assign = jest.fn();
     delete window.location;
     window.location = location;
@@ -894,7 +894,7 @@ describe("<Status /> interactions", () => {
       ...responseData,
       is_verified: false,
       method: "bank_card",
-      payment_url: "https://account.openwisp.io/payment/123",
+      payment_url: "https://account.immunity.io/payment/123",
       mustLogin: true,
     };
     props.location.search = "";
@@ -941,7 +941,7 @@ describe("<Status /> interactions", () => {
   it("should not perform captive page login if payment_requires_internet is false", async () => {
     validateToken.mockReturnValue(true);
     // mock window.location.assign
-    const location = new URL("https://wifi.openwisp.io");
+    const location = new URL("https://wifi.immunity.io");
     location.assign = jest.fn();
     delete window.location;
     window.location = location;
@@ -954,7 +954,7 @@ describe("<Status /> interactions", () => {
       ...responseData,
       is_verified: false,
       method: "bank_card",
-      payment_url: "https://account.openwisp.io/payment/123",
+      payment_url: "https://account.immunity.io/payment/123",
       mustLogin: true,
     };
     props.location.search = "";
@@ -999,7 +999,7 @@ describe("<Status /> interactions", () => {
       ...responseData,
       is_verified: false,
       method: "bank_card",
-      payment_url: "https://account.openwisp.io/payment/123",
+      payment_url: "https://account.immunity.io/payment/123",
       mustLogin: true,
       proceedToPayment: true,
     };
@@ -1153,7 +1153,7 @@ describe("<Status /> interactions", () => {
     );
 
     // mock window.location.assign
-    const location = new URL("https://wifi.openwisp.io");
+    const location = new URL("https://wifi.immunity.io");
     location.assign = jest.fn();
     delete window.location;
     window.location = location;

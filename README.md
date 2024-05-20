@@ -1,40 +1,40 @@
-# openwisp-wifi-login-pages
+# immunity-wifi-login-pages
 
 <!-- Badges -->
 
-[![Build Status](https://github.com/openwisp/openwisp-wifi-login-pages/workflows/OpenWisp%20WiFi%20Login%20Pages%20CI%20BUILD/badge.svg?branch=master)](https://github.com/openwisp/openwisp-wifi-login-pages/actions)
-[![Coverage Status](https://coveralls.io/repos/github/openwisp/openwisp-wifi-login-pages/badge.svg)](https://coveralls.io/github/openwisp/openwisp-wifi-login-pages)
-[![Dependency Monitoring](https://img.shields.io/librariesio/release/github/openwisp/openwisp-wifi-login-pages)](https://libraries.io/github/openwisp/openwisp-wifi-login-pages#repository_dependencies)
+[![Build Status](https://github.com/edge-servers/immunity-wifi-login-pages/workflows/OpenWisp%20WiFi%20Login%20Pages%20CI%20BUILD/badge.svg?branch=master)](https://github.com/edge-servers/immunity-wifi-login-pages/actions)
+[![Coverage Status](https://coveralls.io/repos/github/immunity/immunity-wifi-login-pages/badge.svg)](https://coveralls.io/github/immunity/immunity-wifi-login-pages)
+[![Dependency Monitoring](https://img.shields.io/librariesio/release/github/immunity/immunity-wifi-login-pages)](https://libraries.io/github/immunity/immunity-wifi-login-pages#repository_dependencies)
 
 <p align="center">
-  <img src="https://github.com/openwisp/openwisp-wifi-login-pages/raw/media/docs/login-desktop.png" alt="">
+  <img src="https://github.com/edge-servers/immunity-wifi-login-pages/raw/media/docs/login-desktop.png" alt="">
 </p>
 <p align="center">
-  <img src="https://github.com/openwisp/openwisp-wifi-login-pages/raw/media/docs/sign-up-desktop.png" alt="">
+  <img src="https://github.com/edge-servers/immunity-wifi-login-pages/raw/media/docs/sign-up-desktop.png" alt="">
 </p>
 <p align="center">
-  <img src="https://github.com/openwisp/openwisp-wifi-login-pages/raw/media/docs/verify-mobile-phone-desktop.png" alt="">
+  <img src="https://github.com/edge-servers/immunity-wifi-login-pages/raw/media/docs/verify-mobile-phone-desktop.png" alt="">
 </p>
 <p align="center">
-  <img src="https://github.com/openwisp/openwisp-wifi-login-pages/raw/media/docs/login-mobile.png" alt="">
+  <img src="https://github.com/edge-servers/immunity-wifi-login-pages/raw/media/docs/login-mobile.png" alt="">
 </p>
 <p align="center">
-  <img src="https://github.com/openwisp/openwisp-wifi-login-pages/raw/media/docs/signup-mobile.png" alt="">
+  <img src="https://github.com/edge-servers/immunity-wifi-login-pages/raw/media/docs/signup-mobile.png" alt="">
 </p>
 
 **No more ugly and fragmented User Experience for public/private WiFi services!**
 
-OpenWISP WiFi login pages provides unified and consistent user experience for
+Immunity WiFi login pages provides unified and consistent user experience for
 public/private WiFi services.
 
 In short, this app replaces the classic captive/login page of a WiFi service by integrating
-the [OpenWISP Radius API](https://openwisp-radius.readthedocs.io/) to provide the following features:
+the [Immunity Radius API](https://immunity-radius.readthedocs.io/) to provide the following features:
 
 - Mobile first design (responsive UI)
 - Sign up
 - Optional support for mobile phone verification:
   verify phone number by inserting token sent via SMS, resend the SMS token
-- Login to the wifi service (by getting a radius user token from OpenWISP Radius and
+- Login to the wifi service (by getting a radius user token from Immunity Radius and
   sending a POST to the captive portal login URL behind the scenes)
 - Session status information
 - Logout from the wifi service (by sending a POST to the captive portal logout URL behind the scenes)
@@ -52,7 +52,7 @@ the [OpenWISP Radius API](https://openwisp-radius.readthedocs.io/) to provide th
 - Support for multiple languages
 - Possibility to change any text used in the pages
 - Configurable Terms of Services and Privacy Policy for each organization
-- [Auto-login](https://openwisp.io/docs/tutorials/hotspot.html#automatic-captive-portal-login):
+- [Auto-login](https://immunity.io/docs/tutorials/hotspot.html#automatic-captive-portal-login):
   possibility of recognizing users thanks to signed cookies,
   which saves them from having to re-authenticate
 - Support for [credit/debit card verification and paid subscription plans](#signup-with-payment-flow)
@@ -74,7 +74,7 @@ the [OpenWISP Radius API](https://openwisp-radius.readthedocs.io/) to provide th
 ### Demo
 
 A demo of this application is available at
-[wifi.openwisp.io/demo/](https://wifi.openwisp.io/demo/).
+[wifi.immunity.io/demo/](https://wifi.immunity.io/demo/).
 
 The content of the demo organization is reset every day.
 
@@ -84,12 +84,12 @@ but it will serve well to give a good idea of how this web app works.
 
 ### Community and/or commercial support
 
-See the available [support options](https://openwisp.org/support.html).
+See the available [support options](https://immunity.org/support.html).
 
 ### Deploy it in production
 
 An ansible role which can be used to deploy and maintain this
-app is available, see [ansible-openwisp-wifi-login-pages](https://github.com/openwisp/ansible-openwisp-wifi-login-pages/).
+app is available, see [ansible-immunity-wifi-login-pages](https://github.com/edge-servers/ansible-immunity-wifi-login-pages/).
 
 ### Prerequisites
 
@@ -99,18 +99,18 @@ app is available, see [ansible-openwisp-wifi-login-pages](https://github.com/ope
 
 ### Install
 
-#### Install openwisp-radius
+#### Install immunity-radius
 
-This module is a frontend for [OpenWISP RADIUS](https://github.com/openwisp/openwisp-radius).
+This module is a frontend for [Immunity RADIUS](https://github.com/edge-servers/immunity-radius).
 
-So in order to use it, this app needs a running instance of OpenWISP RADIUS and an
+So in order to use it, this app needs a running instance of Immunity RADIUS and an
 organization correctly configured, you can obtain this by following these steps:
 
 - Follow the instructions
-  [to install OpenWISP RADIUS for development](https://openwisp-radius.readthedocs.io/en/latest/developer/setup.html#installing-for-development).
-- After successfully starting the OpenWISP RADIUS server, open a browser and visit:
+  [to install Immunity RADIUS for development](https://immunity-radius.readthedocs.io/en/latest/developer/setup.html#installing-for-development).
+- After successfully starting the Immunity RADIUS server, open a browser and visit:
   `http://localhost:8000/admin/`, then sign in with the credentials of
-  the `superuser` we created during the installation of `openwisp-radius`.
+  the `superuser` we created during the installation of `immunity-radius`.
 - Visit the change page of the organization you want to add to this module
   and note down the following parameters: `name`, `slug`, `uuid` and `token`
   (from the Organization RADIUS Settings).
@@ -120,8 +120,8 @@ organization correctly configured, you can obtain this by following these steps:
 In a new terminal, clone this repo with:
 
 ```
-git clone https://github.com/openwisp/openwisp-wifi-login-pages.git
-cd openwisp-wifi-login-pages
+git clone https://github.com/edge-servers/immunity-wifi-login-pages.git
+cd immunity-wifi-login-pages
 ```
 
 ##### Install dependencies
@@ -145,23 +145,23 @@ yarn test # headless tests
 Prerequisites for running browser-based tests:
 
 1. [Gecko driver](https://github.com/mozilla/geckodriver/releases/) needs to be installed.
-2. Having running instances of openwisp-radius and openwisp-wifi-login-pages is required.
+2. Having running instances of immunity-radius and immunity-wifi-login-pages is required.
 3. `OPENWIPS_RADIUS_PATH` environment variable is needed to setup/tear down the database
    data needed to run the browser tests. This can be set using the following command:
    ```
    export OPENWISP_RADIUS_PATH=<PATH_TO_OPENWISP_RADIUS_DIRECTORY>
    ```
-4. If a virtual environment is used to run openwisp-radius then
+4. If a virtual environment is used to run immunity-radius then
    this needs to be activated before running browser tests.
 5. Configuration file of `mobile` organization is needed before running `yarn start`.
    `mobile` organization can be created by running:
    ```
    node browser-test/create-mobile-configuration.js
    ```
-6. In the test environment of openwisp-radius, the `default` organization
+6. In the test environment of immunity-radius, the `default` organization
    must be present.
 
-After doing all the prerequisites, you need to make sure OpenWISP RADIUS is running:
+After doing all the prerequisites, you need to make sure Immunity RADIUS is running:
 
 ```
 cd $OPENWISP_RADIUS_PATH
@@ -191,9 +191,9 @@ yarn browser-test
 ##### Add Organization configuration
 
 Before users can login and sign up, you need to create the configuration of the
-captive page for the related OpenWISP organization,
+captive page for the related Immunity organization,
 you should have noted down the parameters performed during the
-[Installation of OpenWISP RADIUS ](#install-openwisp-radius), then you can run:
+[Installation of Immunity RADIUS ](#install-immunity-radius), then you can run:
 
 ```
 yarn add-org
@@ -237,7 +237,7 @@ Below is a table with these properties and a description of their values.
 | secret_key                | Required. Token from organization radius settings. |
 | captive portal login URL  | Required. Captive portal login action url          |
 | captive portal logout URL | Required. Captive portal logout action url         |
-| openwisp radius url       | Required. URL to openwisp-radius.                  |
+| immunity radius url       | Required. URL to immunity-radius.                  |
 
 Chose to copy the assets, then run:
 
@@ -479,7 +479,7 @@ components:
         url: "/support"
       - text:
           en: "twitter"
-        url: "https://twitter.com/openwisp"
+        url: "https://twitter.com/immunity"
         authenticated: true
 ```
 
@@ -515,7 +515,7 @@ The `setting` option can take any of the following values:
 - `mandatory`: fields with this setting are shown and required.
 
 Keep in mind that this configuration must mirror the
-[configuration of openwisp-radius (OPENWISP_RADIUS_OPTIONAL_REGISTRATION_FIELDS)](https://openwisp-radius.readthedocs.io/en/latest/user/settings.html#openwisp-radius-optional-registration-fields).
+[configuration of immunity-radius (OPENWISP_RADIUS_OPTIONAL_REGISTRATION_FIELDS)](https://immunity-radius.readthedocs.io/en/latest/user/settings.html#immunity-radius-optional-registration-fields).
 
 #### Username field in login form
 
@@ -525,7 +525,7 @@ phone number input or an email text input depending on whether
 
 However, it is possible to force the use of a standard text field if needed,
 for example, we may need to configure the username field to accept any value
-so that the [OpenWISP Users Authentication Backend](https://github.com/openwisp/openwisp-users/#authentication-backend)
+so that the [Immunity Users Authentication Backend](https://github.com/edge-servers/immunity-users/#authentication-backend)
 can then figure out if the value passed is a phone number, an email or a username:
 
 ```yaml
@@ -540,7 +540,7 @@ login_form:
 #### Configuring Social Login
 
 In order to enable users to log via third-party services like Google and Facebook,
-the ["Social Login" feature of OpenWISP Radius](https://openwisp-radius.readthedocs.io/en/latest/user/social_login.html)
+the ["Social Login" feature of Immunity Radius](https://immunity-radius.readthedocs.io/en/latest/user/social_login.html)
 must be configured and enabled.
 
 #### Custom CSS files
@@ -642,7 +642,7 @@ footer:
 
 #### Configuring SAML Login & Logout
 
-To enable SAML login, the ["SAML" feature of OpenWISP Radius](https://openwisp-radius.readthedocs.io/en/latest/user/saml.html)
+To enable SAML login, the ["SAML" feature of Immunity Radius](https://immunity-radius.readthedocs.io/en/latest/user/saml.html)
 must be enabled.
 
 The only additional configuration needed is `saml_logout_url`, which is needed
@@ -651,7 +651,7 @@ to perform SAML logout.
 ```yaml
 status_page:
   # other conf
-  saml_logout_url: "https://openwisp.myservice.org/radius/saml2/logout/"
+  saml_logout_url: "https://immunity.myservice.org/radius/saml2/logout/"
 ```
 
 #### TOS & Privacy Policy
@@ -682,9 +682,9 @@ All the **HTTP requests** get logged by default in the console during developmen
 #### Mocking captive portal login and logout
 
 The captive portal login and logout operations can be mocked by using the endpoints
-mentioned in [openwisp-radius captive portal mock docs](https://openwisp-radius.readthedocs.io/en/latest/developer/captive_portal_mock.html).
+mentioned in [immunity-radius captive portal mock docs](https://immunity-radius.readthedocs.io/en/latest/developer/captive_portal_mock.html).
 
-These URLs from OpenWISP RADIUS will be used by default in the development environment.
+These URLs from Immunity RADIUS will be used by default in the development environment.
 The captive portal login and logout URLs and their parameters can be changed by
 editing the YAML configuration file of the respective organization.
 
@@ -694,15 +694,15 @@ This application supports sign up with payment flows, either a one
 time payment, a free debit/credit card transaction for identity verification
 purposes or a subscription with periodic payments.
 
-In order to work, this feature needs the premium **OpenWISP Subscriptions**
-module ([get in touch with commercial support](https://openwisp.org/support.html)
+In order to work, this feature needs the premium **Immunity Subscriptions**
+module ([get in touch with commercial support](https://immunity.org/support.html)
 for more information).
 
 Once the module mentioned above is installed and configured, in order to
 enable this feature, just create a new organization with the
 `yarn run add-org` command and answer `yes` to the following question:
 
-`Are you using OpenWISP Subscriptions to provide paid subscriptions for WiFi plans or identity verification via credit/debit card?`
+`Are you using Immunity Subscriptions to provide paid subscriptions for WiFi plans or identity verification via credit/debit card?`
 
 ### Translations
 
@@ -819,7 +819,7 @@ bandwidth have been consumed).
 To use this feature, you will have to update the error page
 of your captive portal to use
 [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage)
-for forwarding any error message to **OpenWISP WiFi Login Pages**.
+for forwarding any error message to **Immunity WiFi Login Pages**.
 
 Here is an example of authentication error page for pfSense:
 
@@ -838,10 +838,10 @@ Here is an example of authentication error page for pfSense:
 ```
 
 **Note:** Replace `https://wifi-login-pages.example.com/` with `origin` of
-your **OpenWISP WiFi Login Pages** service.
+your **Immunity WiFi Login Pages** service.
 
 With the right configuration, the error messages coming from freeradius or
-the captive portal will be visible to users on **OpenWISP WiFi Login Pages**.
+the captive portal will be visible to users on **Immunity WiFi Login Pages**.
 
 ### Supporting realms (RADIUS proxy)
 
@@ -862,17 +862,17 @@ the credentials directly to the URL specified in `captive_portal_login_form`,
 hence bypassing this app altogether.
 
 Keep in mind that in this use case, since users are basically authenticating
-against databases stored in other sources foreign to OpenWISP but trusted by
+against databases stored in other sources foreign to Immunity but trusted by
 the RADIUS configuration, the wifi-login-pages app stops making any sense,
-because users are registered elsewhere, do not have a local account on OpenWISP,
+because users are registered elsewhere, do not have a local account on Immunity,
 therefore won't be able to authenticate nor change their personal details via
-the OpenWISP RADIUS API and this app.
+the Immunity RADIUS API and this app.
 
 ### Allowing users to manage account from the Internet
 
 The authentication flow might hang if a user tries to access their
 account from the public internet (without connecting to the WiFi service).
-It occurs because the **OpenWISP WiFi Login Page** waits for a response
+It occurs because the **Immunity WiFi Login Page** waits for a response
 from the captive portal, which is usually inaccessible from the public
 internet. If your infrastructure has such a configuration then,
 follow the below instructions to avoid hanging of authentication flow.
@@ -898,7 +898,7 @@ The web application should serve the following HTML on those endpoints:
 ```
 
 **Note:** Replace `https://wifi-login-pages.example.com/` with `origin` of
-your **OpenWISP WiFi Login Pages** service.
+your **Immunity WiFi Login Pages** service.
 
 Assign a dedicated DNS name to be used by both systems: the captive portal
 and the web application which simulates it. Then configure your captive
@@ -981,12 +981,12 @@ root folder. The `sentry-env.json` file should contain configuration as followin
 ```
 
 **Note:** You can take reference from
-[sentry-env.sample.json](https://github.com/openwisp/openwisp-wifi-login-pages/blob/master/sentry-env.sample.json)
+[sentry-env.sample.json](https://github.com/edge-servers/immunity-wifi-login-pages/blob/master/sentry-env.sample.json)
 
 ### Change log
 
-See [Change log](https://github.com/openwisp/openwisp-wifi-login-pages/blob/master/CHANGES.md).
+See [Change log](https://github.com/edge-servers/immunity-wifi-login-pages/blob/master/CHANGES.md).
 
 ### License
 
-See [LICENSE](https://github.com/openwisp/openwisp-wifi-login-pages/blob/master/LICENSE).
+See [LICENSE](https://github.com/edge-servers/immunity-wifi-login-pages/blob/master/LICENSE).

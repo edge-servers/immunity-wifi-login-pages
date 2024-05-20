@@ -8,8 +8,8 @@ settings:
 
 # configuration variables for the server app
 server:
-  # URL to openwisp-radius
-  host: "{{openwisp_radius_url}}"
+  # URL to immunity-radius
+  host: "{{immunity_radius_url}}"
   uuid: "{{uuid}}"
   secret_key: "{{secret_key}}"
   timeout: 2 #request timeout period in seconds
@@ -50,7 +50,7 @@ client:
     header:
       logo:
 {{#if assets_confirm}}
-        url: "openwisp-logo-black.svg" # logo url
+        url: "immunity-logo-black.svg" # logo url
         alternate_text: "{{name}}"
 {{else}}
         url: null # logo url
@@ -169,18 +169,18 @@ client:
       login_page_link: true
 
     contact_page:
-      email: "support@openwisp.co"
+      email: "support@immunity.co"
       helpdesk: "+789 948 564"
 {{#if assets_confirm}}
       social_links:
         - alt:
             en: "twitter"
           icon: "twitter.svg"
-          url: "https://twitter.com/openwisp"
+          url: "https://twitter.com/immunity"
         - alt:
             en: "facebook"
           icon: "facebook.svg"
-          url: "https://facebook.com/openwisp"
+          url: "https://facebook.com/immunity"
 
 {{else}}
       social_links: []

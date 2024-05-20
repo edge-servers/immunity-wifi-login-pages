@@ -681,7 +681,7 @@ describe("handle-change tests", () => {
   const event = {
     target: {
       name: "email",
-      value: "openwisp@openwisp.org",
+      value: "immunity@immunity.org",
     },
   };
   const instance = {
@@ -693,8 +693,8 @@ describe("handle-change tests", () => {
   it("should execute handleChange normally", () => {
     handleChange(event, instance);
     expect(instance.setState).toHaveBeenCalledWith({
-      email: "openwisp@openwisp.org",
-      username: "openwisp",
+      email: "immunity@immunity.org",
+      username: "immunity",
     });
   });
   it("should delete errors on correct value", () => {
@@ -722,21 +722,21 @@ describe("handle-change tests", () => {
 });
 describe("storage tests", () => {
   it("should store, get and clear data in window.localStorage", () => {
-    localStorage.setItem("organization", "openwisp");
-    expect(localStorage.getItem("organization")).toEqual("openwisp");
+    localStorage.setItem("organization", "immunity");
+    expect(localStorage.getItem("organization")).toEqual("immunity");
     localStorage.removeItem("organization");
     expect(localStorage.getItem("organization")).toEqual(null);
-    localStorage.setItem("organization", "openwisp");
+    localStorage.setItem("organization", "immunity");
     localStorage.clear();
     expect(localStorage.getItem("organization")).toEqual(null);
   });
   it("should store, get and clear data in Storage mock", () => {
     const storageMock = storageFallback(null);
-    storageMock.setItem("organization", "openwisp");
-    expect(storageMock.getItem("organization")).toEqual("openwisp");
+    storageMock.setItem("organization", "immunity");
+    expect(storageMock.getItem("organization")).toEqual("immunity");
     storageMock.removeItem("organization");
     expect(storageMock.getItem("organization")).toEqual(undefined);
-    storageMock.setItem("organization", "openwisp");
+    storageMock.setItem("organization", "immunity");
     storageMock.clear();
     expect(storageMock.getItem("organization")).toEqual(undefined);
   });

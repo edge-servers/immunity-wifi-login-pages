@@ -5,7 +5,7 @@ import qs from "qs";
 import config from "../config.json";
 import defaultConfig from "../utils/default-config";
 import {logResponseError} from "../utils/logger";
-import reverse from "../utils/openwisp-urls";
+import reverse from "../utils/immunity-urls";
 import getSlug from "../utils/get-slug";
 
 const mobilePhoneNumberChange = (req, res) => {

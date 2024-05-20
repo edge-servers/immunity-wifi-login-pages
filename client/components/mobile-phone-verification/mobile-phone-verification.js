@@ -203,7 +203,7 @@ export default class MobilePhoneVerification extends React.Component {
           error.response.data &&
           error.response.data.response_code !== "INVALID_ORGANIZATION"
         ) {
-          // This is kept for backward compatibility with older versions of OpenWISP RADIUS
+          // This is kept for backward compatibility with older versions of Immunity RADIUS
           // that does not have API endpoint for checking phone token status.
           return false;
         }

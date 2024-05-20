@@ -22,12 +22,12 @@ if OPENWISP_RADIUS_PATH == '':
 
 sys.path.insert(0, os.path.join(OPENWISP_RADIUS_PATH, 'tests'))
 sys.argv.insert(1, 'browser-test')
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'openwisp2.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'immunity2.settings')
 try:
     django.setup()
 except ImportError:
     print(
-        'OpenWISP RADIUS is not installed or python virtual environment is not activated correctly',
+        'Immunity RADIUS is not installed or python virtual environment is not activated correctly',
         file=sys.stderr,
     )
     sys.exit(1)
@@ -36,7 +36,7 @@ from django.contrib.auth import get_user_model
 from swapper import load_model
 
 User = get_user_model()
-PhoneToken = load_model('openwisp_radius', 'PhoneToken')
+PhoneToken = load_model('immunity_radius', 'PhoneToken')
 
 test_data = load_test_data()
 try:

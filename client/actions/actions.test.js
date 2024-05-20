@@ -198,9 +198,9 @@ describe("actions testing", () => {
   });
   it("should dispatch setUserData action", () => {
     const action = setUserData(dispatch);
-    action({username: "openwisp"});
+    action({username: "immunity"});
     expect(dispatch).toHaveBeenCalledWith({
-      payload: {username: "openwisp"},
+      payload: {username: "immunity"},
       type: types.SET_USER_DATA,
     });
   });

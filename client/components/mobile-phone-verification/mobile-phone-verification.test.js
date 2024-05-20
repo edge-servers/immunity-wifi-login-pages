@@ -215,7 +215,7 @@ describe("Mobile Phone Token verification: standard flow", () => {
   });
 
   it("should not show error if active phone token returns 404", async () => {
-    // This is kept for backward compatibility with older versions of OpenWISP RADIUS
+    // This is kept for backward compatibility with older versions of Immunity RADIUS
     // that does not have API endpoint for checking phone token status.
     MobilePhoneVerification.prototype.activePhoneToken.mockRestore();
     jest

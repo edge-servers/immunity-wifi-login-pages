@@ -250,9 +250,9 @@ exports[`<Login /> interactions phone_number field should be present if mobile p
           </span>
           <a
             class="link"
-            href="mailto:support@openwisp.co"
+            href="mailto:support@immunity.co"
           >
-            support@openwisp.co
+            support@immunity.co
           </a>
         </div>
         <div
@@ -275,7 +275,7 @@ exports[`<Login /> interactions phone_number field should be present if mobile p
         >
           <a
             class="link "
-            href="https://twitter.com/openwisp"
+            href="https://twitter.com/immunity"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -287,7 +287,7 @@ exports[`<Login /> interactions phone_number field should be present if mobile p
           </a>
           <a
             class="link "
-            href="https://facebook.com/openwisp"
+            href="https://facebook.com/immunity"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -528,9 +528,9 @@ exports[`<Login /> interactions should not show phone_number field if auto_switc
           </span>
           <a
             class="link"
-            href="mailto:support@openwisp.co"
+            href="mailto:support@immunity.co"
           >
-            support@openwisp.co
+            support@immunity.co
           </a>
         </div>
         <div
@@ -553,7 +553,7 @@ exports[`<Login /> interactions should not show phone_number field if auto_switc
         >
           <a
             class="link "
-            href="https://twitter.com/openwisp"
+            href="https://twitter.com/immunity"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -565,7 +565,7 @@ exports[`<Login /> interactions should not show phone_number field if auto_switc
           </a>
           <a
             class="link "
-            href="https://facebook.com/openwisp"
+            href="https://facebook.com/immunity"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -806,9 +806,9 @@ exports[`<Login /> interactions username should be text field if mobile phone ve
           </span>
           <a
             class="link"
-            href="mailto:support@openwisp.co"
+            href="mailto:support@immunity.co"
           >
-            support@openwisp.co
+            support@immunity.co
           </a>
         </div>
         <div
@@ -831,7 +831,7 @@ exports[`<Login /> interactions username should be text field if mobile phone ve
         >
           <a
             class="link "
-            href="https://twitter.com/openwisp"
+            href="https://twitter.com/immunity"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -843,7 +843,7 @@ exports[`<Login /> interactions username should be text field if mobile phone ve
           </a>
           <a
             class="link "
-            href="https://facebook.com/openwisp"
+            href="https://facebook.com/immunity"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -919,7 +919,7 @@ exports[`<Login /> rendering should render correctly with social links 1`] = `
             <p>
               <a
                 className="social-link button full"
-                href="https://radius.openwisp.io/login/google"
+                href="https://radius.immunity.io/login/google"
                 rel="noopener noreferrer"
               >
                 <span
@@ -941,7 +941,7 @@ exports[`<Login /> rendering should render correctly with social links 1`] = `
             <p>
               <a
                 className="social-link button full"
-                href="https://radius.openwisp.io/login/facebook"
+                href="https://radius.immunity.io/login/facebook"
                 rel="noopener noreferrer"
               >
                 <span

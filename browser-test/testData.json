@@ -1,11 +1,11 @@
 {
   "testuser": {
-    "email": "testuser@openwisp.org",
+    "email": "testuser@immunity.org",
     "password": "testuser",
     "organization": "default"
   },
   "expiredPasswordUser": {
-    "email": "expiredpassworduser@openwisp.org",
+    "email": "expiredpassworduser@immunity.org",
     "password": "testuser",
     "organization": "default"
   },
@@ -13,7 +13,7 @@
     "phoneNumber": "+911234567890",
     "password": "testuser",
     "organization": "mobile",
-    "email": "testuser2@openwisp.org",
+    "email": "testuser2@immunity.org",
     "uuid": "organization_uuid",
     "secretKey": "organization_secret_key",
     "method": "mobile_phone",

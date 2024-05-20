@@ -107,14 +107,14 @@ describe("<Login /> rendering", () => {
               text: {
                 en: "Login with Google",
               },
-              url: "https://radius.openwisp.io/login/google",
+              url: "https://radius.immunity.io/login/google",
               icon: "google.png",
             },
             {
               text: {
                 en: "Login with Facebook",
               },
-              url: "https://radius.openwisp.io/login/facebook",
+              url: "https://radius.immunity.io/login/facebook",
               icon: "facebook.png",
             },
           ],
@@ -434,7 +434,7 @@ describe("<Login /> interactions", () => {
       username: "tester",
       is_verified: true,
       method: "bank_card",
-      payment_url: "https://account.openwisp.io/payment/123",
+      payment_url: "https://account.immunity.io/payment/123",
     };
     const testResponseData = {...data, key: data.auth_token};
     delete testResponseData.auth_token;
@@ -476,7 +476,7 @@ describe("<Login /> interactions", () => {
     data.username = "tester";
     data.is_verified = false;
     data.method = "bank_card";
-    data.payment_url = "https://account.openwisp.io/payment/123";
+    data.payment_url = "https://account.immunity.io/payment/123";
     axios.mockImplementationOnce(() =>
       Promise.resolve({
         status: 200,

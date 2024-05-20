@@ -5,7 +5,7 @@ import qs from "qs";
 import config from "../config.json";
 import defaultConfig from "../utils/default-config";
 import {logResponseError} from "../utils/logger";
-import reverse from "../utils/openwisp-urls";
+import reverse from "../utils/immunity-urls";
 import getSlug from "../utils/get-slug";
 
 export const createMobilePhoneToken = (req, res) => {
@@ -111,7 +111,7 @@ export const mobilePhoneTokenStatus = (req, res) => {
       .send({
         // The response code is different from other implementations because
         // the frontend expects 404 also when the phone token status API
-        // is not implemented in OpenWISP RADIUS. Thus, the response
+        // is not implemented in Immunity RADIUS. Thus, the response
         // code is used to distinguish between the two scenarios.
         response_code: "INVALID_ORGANIZATION",
         non_field_errors: ["Not found."],

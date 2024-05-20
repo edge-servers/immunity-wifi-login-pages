@@ -251,7 +251,7 @@ describe("test subscriptions", () => {
   it("redirect to payment after registration with payment flow", async () => {
     const data = {
       ...responseData,
-      payment_url: "https://account.openwisp.io/payment/123",
+      payment_url: "https://account.immunity.io/payment/123",
     };
     axios
       .mockImplementationOnce(() =>

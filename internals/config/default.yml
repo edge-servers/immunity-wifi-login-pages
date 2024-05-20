@@ -12,7 +12,7 @@ settings:
 
 # configuration variables for the server app
 server:
-  # put the URL of openwisp-radius here
+  # put the URL of immunity-radius here
   host: "http://127.0.0.1:8000"
   uuid: organization_uuid
   secret_key: organization_secret_key
@@ -40,8 +40,8 @@ client:
   components:
     header:
       logo:
-        url: "openwisp-logo-black.svg" # logo url
-        alternate_text: "openwisp"
+        url: "immunity-logo-black.svg" # logo url
+        alternate_text: "immunity"
       links: []
 
     footer:

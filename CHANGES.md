@@ -10,7 +10,7 @@ First release.
 - Sign up
 - Optional support for mobile phone verification:
   verify phone number by inserting token sent via SMS, resend the SMS token
-- Login to the wifi service (by getting a radius user token from OpenWISP Radius and
+- Login to the wifi service (by getting a radius user token from Immunity Radius and
   sending a POST to the captive portal login URL behind the scenes)
 - Session status information
 - Logout from the wifi service (by sending a POST to the captive portal logout URL behind the scenes)

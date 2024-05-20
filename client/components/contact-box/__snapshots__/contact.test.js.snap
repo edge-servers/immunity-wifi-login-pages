@@ -19,9 +19,9 @@ exports[`<Contact /> rendering with placeholder translation tags should render t
       </span>
       <a
         className="link"
-        href="mailto:support@openwisp.co"
+        href="mailto:support@immunity.co"
       >
-        support@openwisp.co
+        support@immunity.co
       </a>
     </div>
     <div
@@ -45,7 +45,7 @@ exports[`<Contact /> rendering with placeholder translation tags should render t
     >
       <a
         className="link "
-        href="https://twitter.com/openwisp"
+        href="https://twitter.com/immunity"
         rel="noopener noreferrer"
         target="_blank"
       >
@@ -57,7 +57,7 @@ exports[`<Contact /> rendering with placeholder translation tags should render t
       </a>
       <a
         className="link "
-        href="https://facebook.com/openwisp"
+        href="https://facebook.com/immunity"
         rel="noopener noreferrer"
         target="_blank"
       >
@@ -92,9 +92,9 @@ exports[`<Status /> rendering should render correctly 1`] = `
       </span>
       <a
         className="link"
-        href="mailto:support@openwisp.co"
+        href="mailto:support@immunity.co"
       >
-        support@openwisp.co
+        support@immunity.co
       </a>
     </div>
     <div
@@ -118,7 +118,7 @@ exports[`<Status /> rendering should render correctly 1`] = `
     >
       <a
         className="link "
-        href="https://twitter.com/openwisp"
+        href="https://twitter.com/immunity"
         rel="noopener noreferrer"
         target="_blank"
       >
@@ -130,7 +130,7 @@ exports[`<Status /> rendering should render correctly 1`] = `
       </a>
       <a
         className="link "
-        href="https://facebook.com/openwisp"
+        href="https://facebook.com/immunity"
         rel="noopener noreferrer"
         target="_blank"
       >

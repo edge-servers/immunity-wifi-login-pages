@@ -38,7 +38,7 @@ const options = {
   logout_action_url: "http://localhost:8000/captive-portal-mock/logout/",
   logout_by_session_ID: true,
   remember_me: true,
-  openwisp_radius_url: "http://127.0.0.1:8000",
+  immunity_radius_url: "http://127.0.0.1:8000",
   assets_confirm: true,
 };
 

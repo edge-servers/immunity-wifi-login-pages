@@ -389,7 +389,7 @@ describe("<Registration /> interactions", () => {
     wrapper.instance().setState({
       password1: "testpassword",
       password2: "testpassword",
-      email: "tester@openwisp.org",
+      email: "tester@immunity.org",
     });
     const event = {preventDefault: () => {}};
     expect(wrapper.instance().state.errors).toEqual({});
@@ -551,7 +551,7 @@ describe("Registration and Mobile Phone Verification interactions", () => {
       target: {value: "+393660011333", name: "phone_number"},
     });
     wrapper.find("input[name='email']").simulate("change", {
-      target: {value: "tester@openwisp.io", name: "email"},
+      target: {value: "tester@immunity.io", name: "email"},
     });
     wrapper
       .find("input[name='password1']")
@@ -638,13 +638,13 @@ describe("Registration and Mobile Phone Verification interactions", () => {
       context: loadingContextValue,
       disableLifecycleMethods: true,
     });
-    wrapper.instance().setState({first_name: "OpenWISP"});
+    wrapper.instance().setState({first_name: "Immunity"});
     wrapper.instance().handleSubmit(event);
     expect(axios).toHaveBeenCalledWith({
       data: {
         birth_date: "",
         email: "",
-        first_name: "OpenWISP",
+        first_name: "Immunity",
         last_name: "",
         location: "",
         password1: "",
@@ -732,7 +732,7 @@ describe("Registration without identity verification (Email registration)", () =
     );
 
     wrapper.find("input[name='email']").simulate("change", {
-      target: {value: "tester@openwisp.io", name: "email"},
+      target: {value: "tester@immunity.io", name: "email"},
     });
     wrapper
       .find("input[name='password1']")

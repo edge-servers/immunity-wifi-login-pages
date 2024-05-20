@@ -27,12 +27,12 @@ expired_password_tests = 'expiredPassword' in sys.argv
 
 sys.path.insert(0, os.path.join(OPENWISP_RADIUS_PATH, 'tests'))
 sys.argv.insert(1, 'browser-test')
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'openwisp2.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'immunity2.settings')
 try:
     django.setup()
 except ImportError:
     print(
-        'OpenWISP RADIUS is not installed or python virtual environment is not activated correctly',
+        'Immunity RADIUS is not installed or python virtual environment is not activated correctly',
         file=sys.stderr,
     )
     sys.exit(1)
@@ -42,10 +42,10 @@ from django.utils.timezone import now, timedelta
 from swapper import load_model
 
 User = get_user_model()
-Organization = load_model('openwisp_users', 'Organization')
-OrganizationUser = load_model('openwisp_users', 'OrganizationUser')
-OrganizationRadiusSettings = load_model('openwisp_radius', 'OrganizationRadiusSettings')
-RegisteredUser = load_model('openwisp_radius', 'RegisteredUser')
+Organization = load_model('immunity_users', 'Organization')
+OrganizationUser = load_model('immunity_users', 'OrganizationUser')
+OrganizationRadiusSettings = load_model('immunity_radius', 'OrganizationRadiusSettings')
+RegisteredUser = load_model('immunity_radius', 'RegisteredUser')
 
 test_data = load_test_data()
 test_user_email = test_data['testuser']['email']
@@ -80,7 +80,7 @@ try:
 except Organization.DoesNotExist:
     print(
         (
-            f'The organization {test_user_organization} does not exist in the OpenWISP Radius'
+            f'The organization {test_user_organization} does not exist in the Immunity Radius'
             f'environment specified ({OPENWISP_RADIUS_PATH}), please create it and repeat the tests.'
         ),
         file=sys.stderr,

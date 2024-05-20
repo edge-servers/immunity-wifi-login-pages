@@ -40,7 +40,7 @@ const prompts = [
     type: "input",
     name: "uuid",
     message:
-      "What is the uuid of the organization? You can get this information from the organization details in OpenWISP.",
+      "What is the uuid of the organization? You can get this information from the organization details in Immunity.",
     validate: (value) => {
       if (/.+/.test(value)) {
         return true;
@@ -52,7 +52,7 @@ const prompts = [
     type: "input",
     name: "secret_key",
     message:
-      "What is the Organization RADIUS settings Token of this organization? You can get this information from the organization details in OpenWISP.",
+      "What is the Organization RADIUS settings Token of this organization? You can get this information from the organization details in Immunity.",
     validate: (value) => {
       if (/.+/.test(value)) {
         return true;
@@ -76,7 +76,7 @@ const prompts = [
     type: "confirm",
     name: "subscriptions",
     message:
-      "Are you using OpenWISP Subscriptions to provide paid subscriptions for WiFi plans or identity verification via credit/debit card?",
+      "Are you using Immunity Subscriptions to provide paid subscriptions for WiFi plans or identity verification via credit/debit card?",
     default: false,
   },
   {
@@ -117,8 +117,8 @@ const prompts = [
   },
   {
     type: "input",
-    name: "openwisp_radius_url",
-    message: "What is the URL of OpenWISP RADIUS?",
+    name: "immunity_radius_url",
+    message: "What is the URL of Immunity RADIUS?",
     default: "http://127.0.0.1:8000",
   },
   {
@@ -234,7 +234,7 @@ const createConfigurationWithoutPrompts = (passedData) => {
     "logout_action_url",
     "logout_by_session_ID",
     "remember_me",
-    "openwisp_radius_url",
+    "immunity_radius_url",
     "assets_confirm",
   ];
   try {

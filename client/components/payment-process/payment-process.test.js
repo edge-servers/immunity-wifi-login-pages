@@ -46,7 +46,7 @@ const responseData = {
   last_name: "",
   birth_date: null,
   location: "",
-  payment_url: "https://account.openwisp.io/payment/123",
+  payment_url: "https://account.immunity.io/payment/123",
 };
 
 describe("Test <PaymentProcess /> cases", () => {
@@ -239,7 +239,7 @@ describe("Test <PaymentProcess /> cases", () => {
       settings: {...props.settings, payment_iframe: false},
     });
     // mock window.location.assign
-    const location = new URL("https://wifi.openwisp.io");
+    const location = new URL("https://wifi.immunity.io");
     location.assign = jest.fn();
     delete window.location;
     window.location = location;

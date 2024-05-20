@@ -13,7 +13,7 @@ exports[`Test <PaymentProcess /> cases should render payment_url in iframe 1`] =
       <iframe
         height={450}
         name="owisp-payment-iframe"
-        src="https://account.openwisp.io/payment/123"
+        src="https://account.immunity.io/payment/123"
         title="owisp-payment-iframe"
       />
     </div>
