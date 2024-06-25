@@ -1,5 +1,6 @@
 ---
-name: OpenWisp WiFi Login Pages CI BUILD
+name: Immunity
+ WiFi Login Pages CI BUILD
 
 on:
   push:
@@ -117,7 +118,8 @@ jobs:
 
       - name: Browser Tests
         run: |
-          export OPENWISP_RADIUS_PATH=$(pwd)/immunity-radius
+          export IMMUNITY
+_RADIUS_PATH=$(pwd)/immunity-radius
           yarn browser-test
 
       - name: Coveralls

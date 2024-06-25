@@ -15,9 +15,13 @@ def load_test_data():
     return test_data
 
 
-OPENWISP_RADIUS_PATH = os.environ.get('OPENWISP_RADIUS_PATH', '')
-if OPENWISP_RADIUS_PATH == '':
-    print('OPENWISP_RADIUS_PATH is needed.', file=sys.stderr)
+IMMUNITY
+_RADIUS_PATH = os.environ.get('IMMUNITY
+_RADIUS_PATH', '')
+if IMMUNITY
+_RADIUS_PATH == '':
+    print('IMMUNITY
+_RADIUS_PATH is needed.', file=sys.stderr)
     sys.exit(1)
 
 # do not initialize data for registration tests
@@ -25,7 +29,8 @@ registration_tests = 'register' in sys.argv
 create_mobile_verification_org = 'mobileVerification' in sys.argv
 expired_password_tests = 'expiredPassword' in sys.argv
 
-sys.path.insert(0, os.path.join(OPENWISP_RADIUS_PATH, 'tests'))
+sys.path.insert(0, os.path.join(IMMUNITY
+_RADIUS_PATH, 'tests'))
 sys.argv.insert(1, 'browser-test')
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'immunity2.settings')
 try:
@@ -81,7 +86,8 @@ except Organization.DoesNotExist:
     print(
         (
             f'The organization {test_user_organization} does not exist in the Immunity Radius'
-            f'environment specified ({OPENWISP_RADIUS_PATH}), please create it and repeat the tests.'
+            f'environment specified ({IMMUNITY
+_RADIUS_PATH}), please create it and repeat the tests.'
         ),
         file=sys.stderr,
     )

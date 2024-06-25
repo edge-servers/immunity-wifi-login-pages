@@ -2,7 +2,8 @@
 
 <!-- Badges -->
 
-[![Build Status](https://github.com/edge-servers/immunity-wifi-login-pages/workflows/OpenWisp%20WiFi%20Login%20Pages%20CI%20BUILD/badge.svg?branch=master)](https://github.com/edge-servers/immunity-wifi-login-pages/actions)
+[![Build Status](https://github.com/edge-servers/immunity-wifi-login-pages/workflows/Immunity
+%20WiFi%20Login%20Pages%20CI%20BUILD/badge.svg?branch=master)](https://github.com/edge-servers/immunity-wifi-login-pages/actions)
 [![Coverage Status](https://coveralls.io/repos/github/immunity/immunity-wifi-login-pages/badge.svg)](https://coveralls.io/github/immunity/immunity-wifi-login-pages)
 [![Dependency Monitoring](https://img.shields.io/librariesio/release/github/immunity/immunity-wifi-login-pages)](https://libraries.io/github/immunity/immunity-wifi-login-pages#repository_dependencies)
 
@@ -149,7 +150,9 @@ Prerequisites for running browser-based tests:
 3. `OPENWIPS_RADIUS_PATH` environment variable is needed to setup/tear down the database
    data needed to run the browser tests. This can be set using the following command:
    ```
-   export OPENWISP_RADIUS_PATH=<PATH_TO_OPENWISP_RADIUS_DIRECTORY>
+   export IMMUNITY
+_RADIUS_PATH=<PATH_TO_IMMUNITY
+_RADIUS_DIRECTORY>
    ```
 4. If a virtual environment is used to run immunity-radius then
    this needs to be activated before running browser tests.
@@ -164,7 +167,8 @@ Prerequisites for running browser-based tests:
 After doing all the prerequisites, you need to make sure Immunity RADIUS is running:
 
 ```
-cd $OPENWISP_RADIUS_PATH
+cd $IMMUNITY
+_RADIUS_PATH
 # enable python virtual environment if needed
 ./manage.py runserver
 ```
@@ -181,7 +185,9 @@ Then, in another terminal, from the root directory of this repository,
 you can finally run the browser based tests:
 
 ```
-export OPENWISP_RADIUS_PATH=<PATH_TO_OPENWISP_RADIUS_DIRECTORY>
+export IMMUNITY
+_RADIUS_PATH=<PATH_TO_IMMUNITY
+_RADIUS_DIRECTORY>
 # enable python virtual environment if needed
 yarn browser-test
 ```
@@ -515,7 +521,8 @@ The `setting` option can take any of the following values:
 - `mandatory`: fields with this setting are shown and required.
 
 Keep in mind that this configuration must mirror the
-[configuration of immunity-radius (OPENWISP_RADIUS_OPTIONAL_REGISTRATION_FIELDS)](https://immunity-radius.readthedocs.io/en/latest/user/settings.html#immunity-radius-optional-registration-fields).
+[configuration of immunity-radius (IMMUNITY
+_RADIUS_OPTIONAL_REGISTRATION_FIELDS)](https://immunity-radius.readthedocs.io/en/latest/user/settings.html#immunity-radius-optional-registration-fields).
 
 #### Username field in login form
 
